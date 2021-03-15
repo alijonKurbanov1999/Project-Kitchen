@@ -1,10 +1,6 @@
 const ScrollHeader = () => {
   const head = document.getElementById('header');
-    if (this.scrollY < 500) {
-        head.classList.remove('scrolling');
-    } else {
-        head.classList.add('scrolling');
-    }
+  this.scrollY < 500? head.classList.remove('scrolling'): head.classList.add('scrolling');
 }
 
 window.addEventListener("scroll", ScrollHeader);
